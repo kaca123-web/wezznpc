@@ -69,6 +69,26 @@
             display: block;
         }
         
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
+        }
+        
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
         @media (max-width: 600px) {
             h1 {
                 font-size: 2.5rem;
@@ -81,18 +101,27 @@
             .container {
                 padding: 30px 20px;
             }
+            
+            .text-overlay {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Wezz posalji sliku</h1>
-        <p>Simple website for sending images quickly and easily.</p>
+        <p></p>
         
         <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
-                 alt="Colorful gradient background">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                     alt="Colorful gradient background">
+                <div class="text-overlay">Wezz posalji sliku</div>
+            </div>
         </div>
     </div>
+</body>
+</html>
 </body>
 </html>
