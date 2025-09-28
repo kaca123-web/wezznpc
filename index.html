@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wezz posalji sliku</title>
+    
+    <!-- Open Graph meta tags for social media preview -->
+    <meta property="og:title" content="Wezz posalji sliku">
+    <meta property="og:description" content="Simple website for sending images quickly and easily">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+    <meta property="og:url" content="https://example.com/wezz-posalji-sliku">
+    <meta property="og:type" content="website">
+    
     <style>
         * {
             margin: 0;
@@ -46,6 +54,21 @@
             line-height: 1.6;
         }
         
+        .image-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 30px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
         @media (max-width: 600px) {
             h1 {
                 font-size: 2.5rem;
@@ -64,7 +87,12 @@
 <body>
     <div class="container">
         <h1>Wezz posalji sliku</h1>
-        <p></p>
+        <p>Simple website for sending images quickly and easily.</p>
+        
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                 alt="Colorful gradient background">
+        </div>
     </div>
 </body>
 </html>
